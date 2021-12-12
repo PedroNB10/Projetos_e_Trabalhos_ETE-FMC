@@ -1,0 +1,42 @@
+<!-- UBIDOTS -->
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"> <!--  é um tipo de codificação binária -->
+<head>
+<title>UBIDOTS WORKING</title>
+<h1>Trabalho de SD - Pedro Nogueira e Paulo Eduardo</h1>
+<h1>Enviar dados para o Ubidots</h1>
+</head>
+<script src="script.js"> </script>
+
+<body>
+<label>Coloque no campo a seguir para simular o estado do botão:</label> 
+<input id="button_status_js"></input>
+<br>
+<br>
+<label>Coloque no campo a seguir o valor para simular o sensor de umidade:</label>
+<input id="sensor_status_js"></input>
+<br>
+<br>
+<label>Para finalizar envio clique no botão:</label>
+<button onclick="EnviarUbidots()"> ENVIAR </button>
+<br>
+<br>
+<label id="resposta_de_envio"></label>
+<h1>Receber dados do Ubidots</h1>
+<label>Clique no botão para receber os dados do Ubidots:</label>
+<button onclick="ReceberUbidots_aquecedor(),ReceberUbidots_led()"> RECEBER </button>
+<br>
+<br>
+<label id="estado_aquecedor"></label>
+<label id="resposta_de_recepcao1"></label>
+<br>
+<br>
+<label id="estado_led"></label>
+<label id="resposta_de_recepcao2"></label>
+<h1>Link para dashboard:</h1>
+<a href="  https://stem.ubidots.com/app/dashboards/public/dashboard/m3E2-f_X0xl929ZBMc1wnj-6-aBI1FiBR-1_CgKlwes">https://stem.ubidots.com/app/dashboards/public/dashboard/m3E2-f_X0xl929ZBMc1wnj-6-aBI1FiBR-1_CgKlwes</a>
+<br>
+</body>
+
+</html>
